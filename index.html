@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Handlebars.js tutorial</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+		<section id="content"></section>
+		
+		<script src="bower_components/handlebars/handlebars.js"></script>
+		<script id="people-template" type="text/template">
+			{{! This is a comment}}
+			<!-- This is an HTML comment -->
+			<h1>{{bold title}}</h1>
+			{{#list people}}
+				<h1>{{name}}</h1>
+				<div>{{email}}</div>
+			{{/list}}
+		</script>
+		<script src="script.js"></script>
+	</body>
+</html>
